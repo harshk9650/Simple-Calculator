@@ -1,4 +1,4 @@
-# Simple-Calculator 🔗<a href ="harshcalciinetlify.com">Calculator</a>
+# Simple-Calculator 🔗<a href ="harshcalcii.netlify.app">Calculator</a>
 A simple and beginner-friendly calculator built using HTML, CSS, and JavaScript.  Includes basic arithmetic operations with a clean UI and minimal animations.
 
 🧮 Simple Calculator
