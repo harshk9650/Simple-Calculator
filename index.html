@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <header class="calculator-header">
+            <h1><i class="fas fa-calculator"></i> Simple Calculator</h1>
+            <p class="subtitle">A beginner-friendly calculator project</p>
+        </header>
+        
+        <main class="calculator-main">
+            <!-- Calculator Display -->
+            <div class="calculator-display">
+                <div id="display" class="display-text">0</div>
+                <div id="history" class="display-history"></div>
+            </div>
+            
+            <!-- Calculator Buttons -->
+            <div class="calculator-buttons">
+                <!-- First Row -->
+                <button class="btn clear-btn" onclick="clearDisplay()">C</button>
+                <button class="btn operator-btn" onclick="appendToDisplay('/')">/</button>
+                <button class="btn operator-btn" onclick="appendToDisplay('*')">×</button>
+                <button class="btn operator-btn" onclick="appendToDisplay('-')">-</button>
+                
+                <!-- Second Row -->
+                <button class="btn number-btn" onclick="appendToDisplay('7')">7</button>
+                <button class="btn number-btn" onclick="appendToDisplay('8')">8</button>
+                <button class="btn number-btn" onclick="appendToDisplay('9')">9</button>
+                <button class="btn operator-btn" onclick="appendToDisplay('+')" style="grid-row: span 2;">+</button>
+                
+                <!-- Third Row -->
+                <button class="btn number-btn" onclick="appendToDisplay('4')">4</button>
+                <button class="btn number-btn" onclick="appendToDisplay('5')">5</button>
+                <button class="btn number-btn" onclick="appendToDisplay('6')">6</button>
+                
+                <!-- Fourth Row -->
+                <button class="btn number-btn" onclick="appendToDisplay('1')">1</button>
+                <button class="btn number-btn" onclick="appendToDisplay('2')">2</button>
+                <button class="btn number-btn" onclick="appendToDisplay('3')">3</button>
+                <button class="btn equals-btn" onclick="calculateResult()" style="grid-row: span 2;">=</button>
+                
+                <!-- Fifth Row -->
+                <button class="btn number-btn zero-btn" onclick="appendToDisplay('0')">0</button>
+                <button class="btn number-btn" onclick="appendToDisplay('.')">.</button>
+            </div>
+            
+            <div class="calculator-footer">
+                <p>Made by Harsh Kumar❤️</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
